@@ -4,9 +4,12 @@
 	<title>True Bibleway</title>
 	<link href="https://fonts.googleapis.com/css?family=Playball|Ramabhadra" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<!-- <link rel="stylesheet" href="style.css"> -->
 	<link rel="shortcut icon" href="tbw_imgs/Icons8-church.ico">
 	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 </head>
 
 <style>
@@ -14,11 +17,35 @@
 	border: 3px solid maroon;
 	border-radius: 150px;
 }
+
+
+.w3-theme-l5 {color:#000 !important; background-color:#ffe8e8 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#ffb3b3 !important}
+.w3-theme-l3 {color:#fff !important; background-color:#ff6666 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#ff1a1a !important}
+.w3-theme-l1 {color:#fff !important; background-color:#cc0000 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#730000 !important}
+.w3-theme-d2 {color:#fff !important; background-color:#660000 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#590000 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#4d0000 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#400000 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#ffe8e8 !important}
+.w3-theme-dark {color:#fff !important; background-color:#400000 !important}
+.w3-theme-action {color:#fff !important; background-color:#400000 !important}
+
+.w3-theme {color:#fff !important; background-color:#800000 !important}
+.w3-text-theme {color:#800000 !important}
+.w3-border-theme {border-color:#800000 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#800000 !important}
+.w3-hover-text-theme {color:#800000 !important}
+.w3-hover-border-theme:hover {border-color:#800000 !important}
 </style>
 
 <body>
 <div id="wrapper">
-	<header class="columns-around">
+	<header class="w3-theme">
 	<div>
 		<a href="index.html"><img src="" alt="True Bibleway Logo" height="100" width="300"></a>
 	</div>
@@ -33,7 +60,7 @@
 				<li><a href="">DVDs</a></li>
 			</ul>
 		</nav>
-		<div class="headtitle center titlelink"><a href="index.html">True Bibleway Church of Jesus Christ</a></div>
+		<div><a href="index.html">True Bibleway Church of Jesus Christ</a></div>
 	</div>
 	</header>
 
@@ -41,7 +68,8 @@
 	
 		<div id="row1">
 		
-			<div class="schedule floatright space">
+			<div class="w3-card w3-theme-l5">
+					<p>
 					<strong>Sunday School:</strong><br>
 					<span class="subtitle">Every 4th Sunday 10:00 A.M. - 11:30 A.M.</span><br>
 
@@ -52,10 +80,11 @@
 					<hr>
 					<button>Donate</button><br>
 					Donations will be sent through PayPal.
+					</p>
 			</div>
 			
-			<div class="columns-around">
-				<div class="space"><strong>Daily Motivational</strong><br>
+			<div>
+				<div><strong>Daily Motivational</strong><br>
 					This is a place holder.  This is a place holder.  This is a place holder.  
 					This is a place holder.  This is a place holder.  This is a place holder.  
 					This is a place holder.  This is a place holder.  This is a place holder.  
@@ -68,13 +97,13 @@
 		
 		<br>
 	
-		<div id="row2" class="columns-between row">
-			<div id="col1" class="columns-around">
+		<div id="row2">
+			<div>
 				<div>
 					<iframe src="https://calendar.google.com/calendar/embed?src=zwebster%40okramail.deltastate.edu&ctz=America/Chicago" 
 					style="border: 2px solid black" width="500" height="350" frameborder="0" scrolling="no"></iframe>
 				</div>	
-				<div class="space">
+				<div>
 					<h2>Upcoming Events</h2>
 					<h4>Event 1</h4>
 					<p>description of event 1</p>
@@ -83,7 +112,7 @@
 				</div>
 			</div>
 			
-			<div id="col2">
+			<div>
 				<h2>Most Recent Sermon</h2>
 				<audio controls>
 				  <source src="" type="audio/wav">
@@ -103,8 +132,8 @@
 	
 </div> <!-- wrapper -->
 
-<footer>
-	<div style="padding-left: 5px;">
+<footer class="w3-display-container w3-theme">
+	<div>
 		True Bibleway Church of Jesus Christ <br>
 		520 Bishop F.M. Dawson Street <br>
 		Clarksdale, MS 38614 <br>
@@ -112,8 +141,8 @@
 		<!-- <i class="material-icons">email</i> <i class="material-icons">phone</i> ... good for contact us page -->
 	</div>
 	
-	<div style="padding-right: 5px; text-align: right;">
-	&copy; HD Develop 2017<br>
+	<div class="w3-display-topright">
+	HD Develop &copy; 2017<br>
 	<a href="https://icons8.com/">Icons8</a>
 	</div>
 </footer>
