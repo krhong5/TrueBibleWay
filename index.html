@@ -44,25 +44,25 @@
 </style>
 
 <body>
-<div id="wrapper">
-	<header class="w3-theme">
-	<div>
-		<a href="index.html"><img src="" alt="True Bibleway Logo" height="100" width="300"></a>
-	</div>
-	
-	<div>
-		<nav>
-			<ul>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="calendar.html">Calendar</a></li>
-				<li><a href="">Spiritual Growth</a></li>
-				<li><a href="">Donations</a></li>
-				<li><a href="">DVDs</a></li>
-			</ul>
-		</nav>
-		<div><a href="index.html">True Bibleway Church of Jesus Christ</a></div>
-	</div>
+<div>
+	<header class="w3-bar w3-theme">
+		<a href="index.html" class="w3-bar-item"><img src="" alt="True Bibleway Logo" height="100" width="300"></a>
+		<a href="about.html" class="w3-bar-item w3-button w3-hide-small">About Us</a>
+		<a href="calendar.html" class="w3-bar-item w3-button w3-hide-small">Calendar</a>
+		<a href="" class="w3-bar-item w3-button w3-hide-small">Spiritual Growth</a>
+		<a href="" class="w3-bar-item w3-button w3-hide-small">Donations</a>
+		<a href="" class="w3-bar-item w3-button w3-hide-small">DVDs</a>
+		<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBarCollapse()">&#9776;</a>
+
 	</header>
+	
+	<div id="demo" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
+  		<a href="about.html" class="w3-bar-item">About Us</a>
+		<a href="calendar.html" class="w3-bar-item">Calendar</a>
+		<a href="" class="w3-bar-item">Spiritual Growth</a>
+		<a href="" class="w3-bar-item">Donations</a>
+		<a href="" class="w3-bar-item">DVDs</a>
+	</div>
 
 	<main>
 	
@@ -147,6 +147,17 @@
 	</div>
 </footer>
 
+<script>
+function navBarCollapse() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+	
 </body>
 
 </html>
