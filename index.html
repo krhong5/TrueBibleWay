@@ -4,7 +4,6 @@
   <title>True Bibleway</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="shortcut icon" href="tbw_imgs/Icons8-church.ico">
   <meta charset="utf-8">
   
@@ -18,33 +17,34 @@
 
 	<div class="w3-top"> <!-- header and nav -->
 		<header class="w3-bar w3-theme-d3">
-			<a href="index.html" class="w3-bar-item"><img src="" alt="True Bibleway Logo"></a>
+			<a href="index.html" class="w3-bar-item"><img src="tbw_imgs/tbwlogo_orig.png" alt="True Bibleway Logo" height=45.25 width=70.5></a> <!-- orig size: 181x282-->
 			<a href="about.html" class="w3-bar-item w3-button w3-hide-small">About Us</a>
 			<a href="calendar.html" class="w3-bar-item w3-button w3-hide-small">Calendar</a>
 			<div class="w3-dropdown-click">
 			  <button onclick="navDropdown()" class="w3-button w3-hide-small">Spiritual Growth</button>
 			    <div id="spirgro" class="w3-dropdown-content w3-bar-block w3-border">
-			      <a href="" class="w3-bar-item w3-button w3-hide-small">Prayer Requests</a>
-			      <a href="" class="w3-bar-item w3-button w3-hide-small">Online Sermons</a>
+			      <a href="prayer.html" class="w3-bar-item w3-button w3-hide-small">Prayer Requests</a>
+			      <a href="https://www.youtube.com/results?search_query=true+bible+way+church+clarksdale+ms&page=&utm_source=opensearch" target="_blank"  class="w3-bar-item w3-button w3-hide-small">Online Sermons</a>
 			    </div>
 			</div>
 			<a href="" class="w3-bar-item w3-button w3-hide-small">Donations</a>
-			<a href="" class="w3-bar-item w3-button w3-hide-small">DVDs</a>
+			<a href="dvd.html" class="w3-bar-item w3-button w3-hide-small">DVDs</a>
 			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBarCollapse()">&#9776;</a>
 		</header>
 
 		<div id="mobilenav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
+			<a href="index.html" class="w3-bar-item w3-button">Home</a>
 			<a href="about.html" class="w3-bar-item w3-button">About Us</a>
 			<a href="calendar.html" class="w3-bar-item w3-button">Calendar</a>
 			<a class="w3-bar-item">Spiritual Growth</a>
-			  <a href="" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prayer Requests</a>
-			  <a href="" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Sermons</a>
+			  <a href="prayer.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prayer Requests</a>
+			  <a href="https://www.youtube.com/results?search_query=true+bible+way+church+clarksdale+ms&page=&utm_source=opensearch" target="_blank"  class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Sermons</a>
 			<a href="" class="w3-bar-item w3-button">Donations</a>
-			<a href="" class="w3-bar-item w3-button">DVDs</a>
+			<a href="dvd.html" class="w3-bar-item w3-button">DVDs</a>
 		</div>
 	</div>
 
-<main class="w3-padding-48">
+<main class="w3-padding-64">
 	  
 <!-- mini splash -->
     <div class="w3-row-padding">
@@ -89,36 +89,23 @@
 		<div class="w3-row-padding">
 			<div class="w3-col l7">
 			  <script type="text/javascript" src="http://localendar.com/js/PublishedResponsiveIframe.js"></script>
-        <iframe style="width:100%; border:none !important;" id="localendar-iframe" src="http://localendar.com/public/krhong?style=M1"></iframe>
-
-					<!-- <iframe src="https://calendar.google.com/calendar/embed?src=okramail.deltastate.edu_non2mo8r0dcq2h2q14ten586o0%40group.calendar.google.com&showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago" style="border-width:0" height="400" frameborder="0" scrolling="no"></iframe> -->
-					<!-- see https://benmarshall.me/responsive-iframes/ for styling -->
-					<!-- also see https://localendar.com/calendar/web-calendar-samples -->
+			  <iframe style="width:100%; border:none !important;" id="localendar-iframe" src="http://localendar.com/public/krhong?style=M1"></iframe>
 			</div>
-					
-			<!-- <div class="w3-col l4 m6">
-				<h2>Upcoming Events</h2>
-				<h4>Event 1</h4>
-				<p>description of event 1</p>
-				<h4>Event 2</h4>
-				<p>description of event 2</p>
-			</div> -->
 			
 			<div class="w3-col l5">
-				<h2>Most Recent Sermon</h2>
-
-				<hr>
-				<h2>Prayer List</h2>
+				<h2>Prayer Requests</h2>
 				<p>Family 1</p>
 				<p>Family 2</p>
 				<p>Family 3</p>
-				<a href="">Prayer Request Form</a>
+				<p>Family 4</p>
+				<p>Family 5</p>
+				<p class="w3-center">
+					<a href="prayer.html" class="w3-button w3-round-large w3-theme">View Details</a> <a href="prayerform.html" class="w3-button w3-round-large w3-theme">Prayer Request Form</a>
+				</p>
 			</div>
 		</div>
 
 </main>
-	
-
 
 <footer class="w3-cell-row w3-theme-d3 w3-small">
 	<div class="w3-cell w3-mobile">
