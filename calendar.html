@@ -14,65 +14,72 @@
 </head>
 
 <body class="w3-theme-l5">
-
-	<div class="w3-top"> <!-- header and nav -->
+<!-- header and nav -->
+	<div class="w3-top">
 		<header class="w3-bar w3-theme-d3">
-			<a href="index.html" class="w3-bar-item"><img src="tbw_imgs/tbwlogo_orig.png" alt="True Bibleway Logo" height=45.25 width=70.5></a> <!-- orig size: 181x282-->
-			<a href="about.html" class="w3-bar-item w3-button w3-hide-small">About Us</a>
-			<a href="calendar.html" class="w3-bar-item w3-button w3-hide-small">Calendar</a>
-			<div class="w3-dropdown-click">
-			  <button onclick="navDropdown()" class="w3-button w3-hide-small">Spiritual Growth</button>
-			    <div id="spirgro" class="w3-dropdown-content w3-bar-block w3-border">
-			      <a href="prayer.html" class="w3-bar-item w3-button w3-hide-small">Prayer Requests</a>
-			      <a href="https://www.youtube.com/results?search_query=true+bible+way+church+clarksdale+ms&page=&utm_source=opensearch" target="_blank" class="w3-bar-item w3-button w3-hide-small">Online Sermons</a>
+			<a href="index.html" class="w3-bar-item"><img src="tbw_imgs/tbwlogo_orig.png" alt="True Bibleway Logo" height=45 width=71></a> <!-- orig size: 181x282-->
+			
+			<div class="w3-dropdown-hover">
+			  <button class="w3-button w3-hide-small">About Us</button>
+			    <div id="about" class="w3-dropdown-content w3-bar-block w3-border">
+			    <a href="about_beliefs.html" class="w3-bar-item w3-button w3-hide-small">Our Beliefs</a>
+				  <a href="about_mission.html" class="w3-bar-item w3-button w3-hide-small">Mission Statement</a>
+				  <a href="about_doctrinal.html" class="w3-bar-item w3-button w3-hide-small">Doctrinal Statement</a>
+				  <a href="about_churchhis.html" class="w3-bar-item w3-button w3-hide-small">Church History</a>
+				  <a href="about_bishophis.html" class="w3-bar-item w3-button w3-hide-small">Bishop's History</a>
 			    </div>
 			</div>
-			<a href="" class="w3-bar-item w3-button w3-hide-small">Donations</a>
+			
+			<a href="calendar.html" class="w3-bar-item w3-button w3-hide-small">Calendar</a>
+			
+			<div class="w3-dropdown-hover">
+			  <button class="w3-button w3-hide-small">Spiritual Growth</button>
+			    <div id="spirgro" class="w3-dropdown-content w3-bar-block w3-border">
+			      <a href="prayerform.html" class="w3-bar-item w3-button w3-hide-small">Prayer Requests</a>
+				  <a onclick="document.getElementById('modal').style.display='block'" class="w3-bar-item w3-button w3-hide-small">Online Sermons</a>
+			    </div>
+			</div>
+			
 			<a href="dvd.html" class="w3-bar-item w3-button w3-hide-small">DVDs</a>
+			
 			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBarCollapse()">&#9776;</a>
 		</header>
-
+		
+		<!-- pop-up for external link (youtube) -->
+		<div id="modal" class="w3-modal">
+			<div class="w3-modal-content">
+				<div class="w3-container">
+					<span onclick="document.getElementById('modal').style.display='none'"
+						  class="w3-button w3-display-topright">&times;</span>
+					<p>This will take you to an external website (YouTube).</p>
+					<button onclick="document.getElementById('modal').style.display='none'" type="button" class="w3-button">Cancel</button>
+					<a href="https://www.youtube.com/results?search_query=true+bible+way+church+clarksdale+ms&page=&utm_source=opensearch" target="_blank" class="w3-button"
+					   onclick="document.getElementById('modal').style.display='none'" >Continue</a>
+				</div>
+			</div>
+		</div>
+		<!-- responsive navigation -->
 		<div id="mobilenav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
 			<a href="index.html" class="w3-bar-item w3-button">Home</a>
-			<a href="about.html" class="w3-bar-item w3-button">About Us</a>
+			<a class="w3-bar-item">About Us</a>
+				<a href="about_beliefs.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Beliefs</a>
+				<a href="about_mission.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mission Statement</a>
+				<a href="about_doctrinal.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doctrinal Statement</a>
+				<a href="about_churchhis.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Church History</a>
+				<a href="about_bishophis.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bishop's History</a>
 			<a href="calendar.html" class="w3-bar-item w3-button">Calendar</a>
 			<a class="w3-bar-item">Spiritual Growth</a>
-			  <a href="prayer.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prayer Requests</a>
-			  <a href="" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Sermons</a>
-			<a href="" class="w3-bar-item w3-button">Donations</a>
+			  <a href="prayerform.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prayer Requests</a>
+			  <a onclick="document.getElementById('modal').style.display='block'" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Sermons</a>
 			<a href="dvd.html" class="w3-bar-item w3-button">DVDs</a>
 		</div>
 	</div>
+<!-- end header and nav -->
 
 <main class="w3-padding-64">
-	  
-<!-- mini splash -->
-    <div class="w3-row-padding">
-      <div class="w3-col l7 w3-center w3-hide-small w3-hide-medium">
-			<img class="w3-image w3-border" src="tbw_imgs/churchsm.jpg" alt="True Bibleway Church">
-      </div>
-      
-      <div class="w3-col l5">
-        <div style="font-family: Playball;" class="w3-xxxlarge w3-center w3-hide-small w3-hide-medium">
-			True Bible Way Church of Jesus Christ
-		</div>
-        
-        <div class="w3-card w3-theme w3-padding">
-          <p>
-          <strong>Sunday School:</strong><br>
-          <span class="subtitle">Every 4th Sunday 10:00 A.M. - 11:30 A.M.</span><br>
-          <strong>Worship Service:</strong><br>
-          <span class="subtitle">11:45 A.M. - 2:30 P.M.</span><br>
-          <strong>Bible Class:</strong><br>
-          <span class="subtitle">Tuesday Night 7:00 P.M. - 9:00 P.M.</span><br></p>
-          <hr>
-          <p><button class="w3-button w3-round-large w3-block">Donate</button></p>
-        </div>
-      </div>
-	  </div>
 
 <!-- calendar -->
-    <div class="w3-container">
+    <div class="w3-container w3-content">
       <script type="text/javascript" src="http://localendar.com/js/PublishedResponsiveIframe.js"></script>
       <iframe style="width:100%; border:none;" id="localendar-iframe" src="http://localendar.com/public/krhong"></iframe>
     </div>
@@ -85,27 +92,17 @@
 		520 Bishop F.M. Dawson Street <br>
 		Clarksdale, MS 38614 <br>
 		<a href="contact.html">Contact Us</a>
-		<!-- <i class="material-icons">email</i> <i class="material-icons">phone</i> ... good for contact us page -->
 	</div>
-	
+
 	<div class="w3-cell w3-mobile" style="text-align: right;">
-	HD Develop &copy; 2017<br>
-	<a href="https://icons8.com/">Icons8</a>
+		HD Develop &copy; 2017<br>
+		<a href="https://icons8.com/">Icons8</a>
 	</div>
 </footer>
 
 <script>
 function navBarCollapse() {
     var x = document.getElementById("mobilenav");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-function navDropdown() {
-    var x = document.getElementById("spirgro");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
