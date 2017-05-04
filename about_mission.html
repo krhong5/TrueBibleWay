@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>True Bibleway | Mission Statement</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+  <link rel="shortcut icon" href="tbw_imgs/Icons8-church.ico">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="w3-custom-theme.css">
+</head>
+
+<body class="w3-theme-l5">
+<!-- header and nav -->
+	<div class="w3-top">
+		<header class="w3-bar w3-theme-d3">
+			<a href="index.html" class="w3-bar-item"><img src="tbw_imgs/tbwlogo_orig.png" alt="True Bibleway Logo" height=45 width=71></a> <!-- orig size: 181x282-->
+			
+			<div class="w3-dropdown-hover">
+			  <button class="w3-button w3-hide-small">About Us</button>
+			    <div id="about" class="w3-dropdown-content w3-bar-block w3-border">
+			      <a href="about_beliefs.html" class="w3-bar-item w3-button w3-hide-small">Our Beliefs</a>
+				  <a href="about_mission.html" class="w3-bar-item w3-button w3-hide-small">Mission Statement</a>
+				  <a href="about_doctrinal.html" class="w3-bar-item w3-button w3-hide-small">Doctrinal Statement</a>
+				  <a href="about_churchhis.html" class="w3-bar-item w3-button w3-hide-small">Church History</a>
+				  <a href="about_bishophis.html" class="w3-bar-item w3-button w3-hide-small">Bishop's History</a>
+			    </div>
+			</div>
+			
+			<a href="calendar.html" class="w3-bar-item w3-button w3-hide-small">Calendar</a>
+			
+			<div class="w3-dropdown-hover">
+			  <button class="w3-button w3-hide-small">Spiritual Growth</button>
+			    <div id="spirgro" class="w3-dropdown-content w3-bar-block w3-border">
+			      <a href="prayerform.html" class="w3-bar-item w3-button w3-hide-small">Prayer Requests</a>
+				  <a onclick="document.getElementById('modal').style.display='block'" class="w3-bar-item w3-button w3-hide-small">Online Sermons</a>
+			    </div>
+			</div>
+			
+			<a href="dvd.html" class="w3-bar-item w3-button w3-hide-small">DVDs</a>
+			
+			<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="navBarCollapse()">&#9776;</a>
+		</header>
+		
+		<!-- pop-up for external link (youtube) -->
+		<div id="modal" class="w3-modal">
+			<div class="w3-modal-content">
+				<div class="w3-container">
+					<span onclick="document.getElementById('modal').style.display='none'"
+						  class="w3-button w3-display-topright">&times;</span>
+					<p>This will take you to an external website (YouTube).</p>
+					<button onclick="document.getElementById('modal').style.display='none'" type="button" class="w3-button">Cancel</button>
+					<a href="https://www.youtube.com/results?search_query=true+bible+way+church+clarksdale+ms&page=&utm_source=opensearch" target="_blank" class="w3-button"
+					   onclick="document.getElementById('modal').style.display='none'" >Continue</a>
+				</div>
+			</div>
+		</div>
+		<!-- responsive navigation -->
+		<div id="mobilenav" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
+			<a href="index.html" class="w3-bar-item w3-button">Home</a>
+			<a class="w3-bar-item">About Us</a>
+				<a href="about_beliefs.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Beliefs</a>
+				<a href="about_mission.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mission Statement</a>
+				<a href="about_doctrinal.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Doctrinal Statement</a>
+				<a href="about_churchhis.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Church History</a>
+				<a href="about_bishophis.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bishop's History</a>
+			<a href="calendar.html" class="w3-bar-item w3-button">Calendar</a>
+			<a class="w3-bar-item">Spiritual Growth</a>
+			  <a href="prayerform.html" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prayer Requests</a>
+			  <a onclick="document.getElementById('modal').style.display='block'" class="w3-bar-item w3-button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online Sermons</a>
+			<a href="dvd.html" class="w3-bar-item w3-button">DVDs</a>
+		</div>
+	</div>
+<!-- end header and nav -->
+
+<main class="w3-padding-64 content">
+
+	<div class="w3-container w3-card w3-theme w3-content">
+	  <h2>Mission Statement</h2>
+		<p>The supreme mission of the church, and every individual believer, is to glorify our Lord and Savior, Jesus Christ,
+		and to serve him forever (Ephesians 3:21; Romans 11:36; 1 Peter 4:11). <br><br>He gave Himself for us, that He might redeem us from all iniquity,
+		and purify unto himself a peculiar people, zealous of good works; that we should shew forth the praises of Him who hath called us out of
+		darkness into His marvelous light; and that we may be blameless and harmless, the sons of God, without rebuke, in the midst of a crooked
+		and perverse generation, among whom we are as salt and as light that shine in the world,
+		holding forth the Word of life, to give light to them that sit in darkness and in the shadow of death,
+		to guide their feet into the way of peace. (Titus 2:13, 14; I Peter 2:9; Philippians 2:15, Luke 1:79).
+		</p>
+	</div>
+
+</main>
+
+<footer class="w3-cell-row w3-theme-d3 w3-small">
+	<div class="w3-cell w3-mobile">
+		True Bibleway Church of Jesus Christ <br>
+		520 Bishop F.M. Dawson Street <br>
+		Clarksdale, MS 38614 <br>
+		<a href="contact.html">Contact Us</a>
+	</div>
+
+	<div class="w3-cell w3-mobile" style="text-align: right;">
+		HD Develop &copy; 2017<br>
+		<a href="https://icons8.com/">Icons8</a>
+	</div>
+</footer>
+
+<script>
+function navBarCollapse() {
+    var x = document.getElementById("mobilenav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+	
+</body>
+
+</html>
